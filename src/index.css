@@ -3,7 +3,9 @@
 body {
   --color-black: #000;
   --color-grey-light: #f4f4f4;
-  --color-grey: #9a9a9a;
+  --color-grey-light-rgb: 244, 244, 244;
+  --color-grey: #999999;
+  --color-grey-rgb: 154, 154, 154;
   --color-primary-light: #e7f4f5;
   --color-primary-rgb: 10, 147, 150;
   --color-primary: #0a9396;
@@ -25,12 +27,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 *:focus {

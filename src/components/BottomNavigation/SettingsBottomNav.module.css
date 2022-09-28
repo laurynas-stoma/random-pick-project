@@ -22,10 +22,24 @@
 .settings {
   background-color: var(--color-grey-light);
   border-radius: 15px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.07);
   display: flex;
+  position: relative;
   grid-column-end: span 8;
   grid-column-start: 1;
+}
+
+.settings::before {
+  background: rgba(var(--color-grey-rgb), 0.45);
+  border-radius: 15px;
+  content: '';
+  height: 80%;
+  left: 50%;
+  position: absolute;
+  top: 20%;
+  transform: translateX(-50%);
+  width: calc(100% - 10px);
+  z-index: -1;
+  filter: blur(5px);
 }
 
 .btn-cancel {
@@ -40,7 +54,7 @@
   flex-grow: 4;
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
   .container {
     bottom: 20px;
     grid-template-columns: repeat(6, 56px);
@@ -58,9 +72,9 @@
   .btn-confirm {
     flex-grow: 3;
   }
-   }
+}
 
-@media (max-width: 480px) {  
+@media (max-width: 480px) {
   .container {
     column-gap: 10px;
     grid-template-columns: repeat(5, 56px);
@@ -69,4 +83,4 @@
     grid-column-end: span 5;
     grid-column-start: 1;
   }
-   }
+}
