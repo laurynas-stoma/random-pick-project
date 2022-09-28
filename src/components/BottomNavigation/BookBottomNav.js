@@ -22,7 +22,7 @@ const BookBottomNav = (props) => {
 
     if (type === 'PREVIOUS_BOOK') {
       if (currentItemIdx === 0) {
-        return;
+        return currentItemID;
       } else {
         newItemIdx = currentItemIdx - 1;
         newItemId = collection[newItemIdx].id;
