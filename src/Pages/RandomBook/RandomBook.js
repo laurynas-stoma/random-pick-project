@@ -75,7 +75,7 @@ const RandomBook = () => {
   };
 
   const clickPrevious = async (id) => {
-    if (!isLoading) {
+    if (!isLoading && id !== currentItem.id) {
       const fullItemData = await dispatch(fetchFirestoreItem('books', id));
       dispatch(randomBookActions.setCurrentItem({ item: fullItemData }));
     }
