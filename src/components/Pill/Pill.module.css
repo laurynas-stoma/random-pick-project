@@ -1,0 +1,13 @@
+.pill {
+  border-radius: 20px;
+  display: inline-block;
+  font: 500 14px var(--main-font);
+  line-height: 1;
+  padding: 9px 16px;
+}
+
+@media (max-width: 768px) {
+  .pill {
+    font-size: 12px;
+  }
+}

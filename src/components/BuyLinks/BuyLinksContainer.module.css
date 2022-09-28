@@ -1,0 +1,8 @@
+.buy-links-container {
+  column-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  row-gap: 10px;
+}

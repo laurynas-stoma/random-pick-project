@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  --color-black: #000;
+  --color-grey-light: #f4f4f4;
+  --color-grey: #9a9a9a;
+  --color-primary-light: #e7f4f5;
+  --color-primary-rgb: 10, 147, 150;
+  --color-primary: #0a9396;
+  --color-white: #fff;
+  --main-font-text: 'Open Sans';
+  --main-font: 'Poppins';
+  --big-column-gap: 40px;
+  --medium-column-gap: 30px;
+  --small-column-gap: 20px;
+  --x-small-column-gap: 10px;
+  --big-row-gap: 40px;
+  --medium-row-gap: 30px;
+  --small-row-gap: 20px;
+  --x-small-row-gap: 10px;
+  --z-index-bottom-nav: 10;
+  --z-index-header: 11;
+  --z-index-nav-close-btn: 12;
+  --z-index-dropdown: 9;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+*:focus {
+  outline-color: var(--color-primary);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  overflow-y: scroll;
+}

@@ -1,0 +1,16 @@
+.container {
+  margin-top: 40px;
+  max-width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--color-primary-light);
+  border-radius: 15px;
+  color: var(--color-primary);
+  font: 500 16px var(--main-font);
+}
+
+.link a {
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--color-primary);
+}

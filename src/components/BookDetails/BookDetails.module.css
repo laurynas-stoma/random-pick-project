@@ -1,0 +1,65 @@
+.title {
+  color: var(--color-primary);
+  font-weight: 600;
+  font: 600 36px var(--main-font);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.author {
+  color: black;
+  font: 500 24px var(--main-font);
+  line-height: 1.5;
+  margin: 0 0 20px;
+  padding: 0;
+}
+.categories {
+  margin: 10px 0;
+}
+
+.category {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.description {
+  font: 400 18px var(--main-font-text);
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.paragraph {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .author {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .paragraph {
+    padding-bottom: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .author {
+    font-size: 18px;
+  }
+}

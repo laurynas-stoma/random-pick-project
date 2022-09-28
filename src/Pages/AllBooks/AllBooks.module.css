@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  color: var(--color-primary);
+  font: 600 32px var(--main-font);
+  line-height: 56px;
+  margin: 0;
+}
+
+.header-actions {
+  column-gap: 20px;
+  display: flex;
+}
+
+.btn-container {
+  align-items: center;
+  background: var(--color-grey-light);
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.search,
+.settings {
+  stroke: var(--color-primary);
+}

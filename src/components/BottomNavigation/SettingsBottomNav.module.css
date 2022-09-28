@@ -1,0 +1,72 @@
+.container {
+  bottom: 30px;
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%);
+  z-index: var(--z-index-bottom-nav);
+}
+
+.container button {
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font: 500 20px var(--main-font);
+  line-height: 1.5;
+  margin: 5px;
+  padding: 10px 0;
+}
+
+.settings {
+  background-color: var(--color-grey-light);
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.07);
+  display: flex;
+  grid-column-end: span 8;
+  grid-column-start: 1;
+}
+
+.btn-cancel {
+  background: var(--color-grey-light);
+  color: var(--color-primary);
+  flex-grow: 1;
+}
+
+.btn-confirm {
+  background: var(--color-primary);
+  color: var(--color-grey-light);
+  flex-grow: 4;
+}
+
+@media (max-width: 768px) {  
+  .container {
+    bottom: 20px;
+    grid-template-columns: repeat(6, 56px);
+  }
+
+  .settings {
+    grid-column-end: span 6;
+    grid-column-start: 1;
+  }
+  .container button {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .btn-confirm {
+    flex-grow: 3;
+  }
+   }
+
+@media (max-width: 480px) {  
+  .container {
+    column-gap: 10px;
+    grid-template-columns: repeat(5, 56px);
+  }
+  .settings {
+    grid-column-end: span 5;
+    grid-column-start: 1;
+  }
+   }
